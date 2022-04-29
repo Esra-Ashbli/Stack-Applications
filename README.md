@@ -1,9 +1,11 @@
 # <h1>Stack-Applications</h1>
-Stack applications in data structure: 
+<pre>
+<h2>Stack applications in data structure: </h2>
       1. Converting an expression from infix to postfix. 
       2. Evaluating a postfix expression.
- 
+ </pre>
 <b><h3>Converting an expression from infix to postfix:</h3></b>
+<pre>
 -algorithm
 opstk= the empty stack;
 while (not end of input)
@@ -30,8 +32,9 @@ while (!empty())
 topsymb=pop();
 add topsymb to the postfix string;
 } /* end while*/
-
+</pre>
 <b><h3>Evaluating a postfix expression:</h3></b>
+<pre>
 -algorithm
 Opndstk= the empty stack;
 /* scan the input string reading one element at a time into
@@ -52,3 +55,4 @@ push(value);
 } /* end else*/
 } /* end while*/
 return (pop());
+</pre>
