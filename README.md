@@ -1,9 +1,9 @@
-# Stack-Applications
+# <h1>Stack-Applications</h1>
 Stack applications in data structure: 
       1. Converting an expression from infix to postfix. 
       2. Evaluating a postfix expression.
  
-<b>Converting an expression from infix to postfix:</b>
+<b><h3>Converting an expression from infix to postfix:</h3></b>
 -algorithm
 opstk= the empty stack;
 while (not end of input)
@@ -30,3 +30,25 @@ while (!empty())
 topsymb=pop();
 add topsymb to the postfix string;
 } /* end while*/
+
+<b><h3>Evaluating a postfix expression:</h3></b>
+-algorithm
+Opndstk= the empty stack;
+/* scan the input string reading one element at a time into
+symb*/
+while (not end of input)
+{
+symb=next input character;
+if (symb is an operand)
+push(symb);
+else
+{
+/* symb is an operator*/
+opnd2=pop();
+opnd1=pop();
+value=resulr of applying symb to opnd1 and
+opnd2;
+push(value);
+} /* end else*/
+} /* end while*/
+return (pop());
